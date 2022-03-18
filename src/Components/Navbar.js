@@ -2,7 +2,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { GoLightBulb } from "react-icons/go";
 export default function Navbar() {
   return (
-    <nav
+    <header
       className="flex flex-row justify-between h-[180px] 
                     w-screen bg-[#8AAAE5] items-center font-Lato shadow-xl text-white"
     >
@@ -52,6 +52,6 @@ export default function Navbar() {
           <AiFillGithub />
         </a>
       </div>
-    </nav>
+    </header>
   );
 }

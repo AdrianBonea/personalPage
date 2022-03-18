@@ -1,13 +1,15 @@
 import Navbar from "./Components/Navbar";
-import Main from "./Components/Main";
+import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
+import About from "./Components/About";
 
 export default function App() {
   return (
-    <>
+    <main className="h-full">
       <Navbar />
-      <Main />
+      <Hero />
+      <About />
       <Footer />
-    </>
+    </main>
   );
 }

@@ -2,7 +2,7 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 export default function MainContent() {
   return (
-    <main className="mt-[120px] bg-white container mx-auto">
+    <section className=" mt-[120px] bg-white container mx-auto font-Lato">
       <div className="leading-[60px]">
         <RoughNotationGroup show={true}>
           <RoughNotation
@@ -59,6 +59,6 @@ export default function MainContent() {
           </RoughNotation>
         </RoughNotationGroup>
       </div>
-    </main>
+    </section>
   );
 }
