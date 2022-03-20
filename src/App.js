@@ -5,7 +5,7 @@ import About from "./Components/About";
 
 export default function App() {
   return (
-    <main className="h-full">
+    <main className="relative min-h-[100vh] w-max-[100vh]">
       <Navbar />
       <Hero />
       <About />
