@@ -1,5 +1,6 @@
 import React from "react";
 import { BsArrowReturnRight } from "react-icons/bs";
+import { SiGithub } from "react-icons/si";
 
 export default function Footer() {
   const [allRepos, setAllRepos] = React.useState([]);
@@ -29,7 +30,10 @@ export default function Footer() {
         <div className="grid grid-cols-5 gap-y-10 gap-x-3 ">
           <span className="row-span-2 text-8xl text-bold text-white drop-shadow-lg">
             Updates
-            <BsArrowReturnRight />
+            <div className="flex flex-row text-9xl">
+              <SiGithub />
+              <BsArrowReturnRight />
+            </div>
           </span>
           {allRepos.slice(0, 4).map((repo) => (
             <a href={repo.html_url} target="_blank">

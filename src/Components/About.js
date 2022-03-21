@@ -10,18 +10,18 @@ import {
 
 export default function About() {
   return (
-    <section className="py-40 font-Lato w-full flex flex-col divide-black">
+    <section className="my-[27vh] font-Lato w-full h-[400px] flex flex-col justify-center bg-[#8AAAE5]/50">
       <h1
         className="flex justify-center text-5xl  
-                      py-3 drop-shadow font-bold border-solid"
+                     py-3 drop-shadow font-bold border-solid"
       >
         <IoCode />
         &nbsp; About me &nbsp;
         <IoCodeSlash />
       </h1>
       <p
-        className="indent-7 flex justify-center py-3 bg-[#8AAAE5]/90 
-                    shadow-xl font-light text-black"
+        className="indent-7 flex justify-center py-5 bg-[#8AAAE5] 
+                    shadow-xl font-light text-black rounded-sm"
       >
         Hello, my name is Adrian , I'm enthusiastic, focused, and motivated to
         achieve my goals.
@@ -32,34 +32,49 @@ export default function About() {
 
       <h1
         className="flex justify-center text-5xl  
-                      py-3 drop-shadow font-bold border-solid"
+                      py-5 drop-shadow font-bold border-solid"
       >
         <IoCode />
         &nbsp; My stack &nbsp;
         <IoCodeSlash />
       </h1>
-      <div className="flex cols justify-center gap-5">
-        <div className="">
+      <div className="flex cols justify-center gap-5 ">
+        <div
+          className="bg-[#8AAAE5] grid grid-cols-1 
+                        place-items-center py-3 text-xl w-28 rounded-3xl shadow-lg "
+        >
           <SiReact />
           <p>React</p>
         </div>
-        <div>
+        <div
+          className="bg-[#8AAAE5] grid grid-cols-1 
+                         place-items-center py-3 text-xl w-28 rounded-3xl shadow-lg"
+        >
           <SiTailwindcss />
           <p>TailwindCSS</p>
         </div>
-        <div>
+        <div
+          className="bg-[#8AAAE5] grid grid-cols-1 
+                       place-items-center py-3 text-xl w-28 rounded-3xl shadow-lg"
+        >
           <SiJavascript />
           <p>JavaScript</p>
         </div>
-        <div>
+        <div
+          className="bg-[#8AAAE5] grid grid-cols-1 
+                     place-items-center py-3 text-xl w-28 rounded-3xl shadow-lg"
+        >
           <SiMysql />
           <p>MySQL</p>
         </div>
-        <div>
+        <div
+          className="bg-[#8AAAE5] grid grid-cols-1 
+                       place-items-center py-3 text-xl w-28 rounded-3xl shadow-lg"
+        >
           <SiCss3 />
           <p>CSS</p>
         </div>
-        <div>
+        <div className="bg-[#8AAAE5] grid grid-cols-1 place-items-center py-3 text-xl w-28 rounded-3xl shadow-lg">
           <SiHtml5 />
           <p>HTML</p>
         </div>
