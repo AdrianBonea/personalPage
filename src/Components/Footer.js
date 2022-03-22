@@ -36,11 +36,13 @@ export default function Footer() {
             </div>
           </span>
           {allRepos.slice(0, 4).map((repo) => (
-            <a href={repo.html_url} target="_blank">
-              <ul
-                key={repo.id}
-                className="backdrop-blur-xl bg-white/20 w-auto h-full my-3 mr-5 rounded-xl shadow-md "
-              >
+            <a
+              key={repo.id}
+              href={repo.html_url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ul className="backdrop-blur-xl bg-white/20 w-auto h-full my-3 mr-5 rounded-xl shadow-md ">
                 <li className="ml-5 pt-8 font-bold text-xl max-h-[260px] underline decoration-pink-500">
                   {Capitalize(repo.name)}
                 </li>
