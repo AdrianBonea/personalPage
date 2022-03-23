@@ -22,9 +22,9 @@ export default function Footer() {
     <footer className="inline-block">
       <footer
         className=" w-full h-[320px] pb-[40px] 
-                      bg-[#8AAAE5] text-black flex justify-around font-Lato"
+                      bg-[#373e98] text-black flex justify-around font-Lato"
       >
-        <div className="absolute bottom-[320px] left-0 text-8xl text-bold text-[#8AAAE5] drop-shadow-lg">
+        <div className="absolute bottom-[320px] left-0 text-8xl text-bold text-white drop-shadow-lg">
           Latest
         </div>
         <div className="grid grid-cols-5 gap-y-10 gap-x-3 ">
@@ -35,7 +35,7 @@ export default function Footer() {
               <BsArrowReturnRight />
             </div>
           </span>
-          {allRepos.slice(0, 4).map((repo) => (
+          {allRepos.slice(0, 3).map((repo) => (
             <a
               key={repo.id}
               href={repo.html_url}

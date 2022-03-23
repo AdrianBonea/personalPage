@@ -14,12 +14,17 @@
   transition: background-size 0.5s ease-in-out;
 }
 
-.link-underline-black {
+.link-underline-pink {
   background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#f2c, #f2c);
+    linear-gradient(#f16775, #f16775);
 }
 
 .link-underline:hover {
   background-size: 100% 3px;
   background-position: 0 100%;
+}
+
+.link-underline-yellow {
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#ceb92c, #ceb92c);
 }

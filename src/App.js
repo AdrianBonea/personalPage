@@ -5,11 +5,17 @@ import About from "./Components/About";
 
 export default function App() {
   return (
-    <main className="relative min-h-[100vh] w-max-[100vh]">
-      <Navbar />
-      <Hero />
-      <About />
-      <Footer />
+    <main className="flex relative min-h-[100vh] w-max-[100vh] font-Lato">
+      <div className="h-screen top-0 sticky">
+        <Navbar />
+      </div>
+      <div className="flex flex-grow w-screen">
+        <div className="flex flex-col ">
+          <Hero />
+          <About />
+          <Footer />
+        </div>
+      </div>
     </main>
   );
 }

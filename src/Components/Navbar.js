@@ -1,50 +1,28 @@
 export default function Navbar() {
   return (
     <header
-      className="flex flex-row justify-between h-[180px] 
-                    w-full bg-[#373e98] items-center font-Lato shadow-xl text-white "
+      className="flex h-screen
+                    w-[300px] bg-[#373e98] items-center font-Lato  text-[white] "
     >
-      <div className="flex flex-row items-center ml-5 ">
-        {/* <img
-          src="./me.png"
-          alt="Me"
-          className="drop-shadow-l h-[120px] border-2 rounded-full drop-shadow-xl"
-        /> */}
-        <h1 className="text-4xl font-bold drop-shadow-xl"></h1>
-      </div>
-      <div className="flex flex-cols space-x-8 text-2xl">
+      <div className="flex flex-col mx-16 text-2xl">
         <a
-          href="./index"
-          className="px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  
-                        duration-300 hover:bg-[#f16775]/50 rounded-xl drop-shadow-md"
+          href="#home"
+          className="my-4 link link-underline link-underline-pink drop-shadow-md"
         >
-          Home
-        </a>
-        {/* <a
-          href="./index"
-          className="px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  
-                        duration-300 hover:bg-slate-50/25 rounded-xl drop-shadow-md"
-        >
-          About
-        </a> */}
-        <a
-          href="./index"
-          className="px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  
-                        duration-300 hover:bg-[#f16775]/50 rounded-xl drop-shadow-md"
-        >
-          Projects
+          ./home
         </a>
         <a
-          href="./index"
-          className="px-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  
-                        duration-300 hover:bg-[#f16775]/50 rounded-xl drop-shadow-md"
+          href="#about"
+          className="my-4 link link-underline link-underline-pink drop-shadow-md"
         >
-          Contact
+          ./about
         </a>
-      </div>
-      <div className="flex flex-cols space-x-2 items-center mr-8 text-4xl">
-        <button type="button"></button>
-        <a href="https://github.com/AdrianBonea/portofolio"></a>
+        <a
+          href="#contact"
+          className="my-4 link link-underline link-underline-pink drop-shadow-md"
+        >
+          ./contact
+        </a>
       </div>
     </header>
   );
