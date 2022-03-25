@@ -45,6 +45,7 @@ export default function Contact() {
                 <a
                   href="https://github.com/AdrianBonea"
                   target="_blank"
+                  rel="noreferrer"
                   className="mx-4"
                 >
                   <AiFillGithub />
@@ -52,6 +53,7 @@ export default function Contact() {
                 <a
                   href="https://www.linkedin.com/in/adrian-mirel-bonea/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <AiFillLinkedin />
                 </a>
