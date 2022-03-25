@@ -19,11 +19,11 @@ export default function Footer() {
   return (
     <footer className="inline-block">
       <footer
-        className="w-full h-[320px] pb-[40px]  
+        className="w-full h-full pb-[40px]  
                       bg-[#373e98] text-white/80 flex justify-around font-Lato"
       >
-        <div className="grid grid-cols-5 gap-y-10 gap-x-3 ">
-          <div className="flex flex-col text-3xl font-bold pt-8 text-white drop-shadow-md">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-y-10 gap-x-3 mx-10">
+          <div className="text-3xl sm:text-3xl md:text-3xl lg:text-xl xl:text-xl 2xl:text-3xl font-bold pt-8 text-white drop-shadow-md">
             <p>./github/updates</p>
           </div>
 
@@ -34,7 +34,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <ul className="backdrop-blur-xl bg-white/10 w-auto h-full my-3  shadow-md ">
+              <ul className="backdrop-blur-xl bg-white/10 w-auto h-full my-3 shadow-md ">
                 <li className="ml-5 pt-8 font-bold text-xl max-h-[260px] underline decoration-[#f16775]">
                   {Capitalize(repo.name)}
                 </li>

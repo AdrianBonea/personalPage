@@ -7,7 +7,7 @@ import Contact from "./Components/Contact";
 export default function App() {
   return (
     <main className="flex relative min-h-[100vh] w-max-[100vh] font-Lato">
-      <div className="h-screen top-0 sticky">
+      <div className="h-screen top-0 sticky hidden xl:block">
         <Navbar />
       </div>
       <div className="flex flex-grow w-screen">

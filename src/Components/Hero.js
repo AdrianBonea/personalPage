@@ -3,8 +3,8 @@ export default function MainContent() {
     <section className="bg-[#373e98] h-[100vh] w-full " id="home">
       <div className="hidden">DarkMode </div>
 
-      <div className="pt-[30vh] container ">
-        <div className="flex flex-wrap justify-center ">
+      <div className="pt-[30vh] ">
+        <div className="flex flex-wrap justify-center mx-10">
           <div className="leading-[5px]  text-white w-[770px]">
             <h1 className="text-6xl">
               <span className="link link-underline link-underline-pink">

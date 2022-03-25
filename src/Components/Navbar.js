@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <header
+    <section
       className="flex h-screen 
                     w-[300px] bg-[#373e98] items-center font-Lato text-[white] "
     >
@@ -24,6 +24,6 @@ export default function Navbar() {
           ./contact
         </a>
       </div>
-    </header>
+    </section>
   );
 }
