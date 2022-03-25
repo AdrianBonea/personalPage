@@ -1,7 +1,7 @@
 export default function MainContent() {
   return (
     <section className="bg-[#373e98] h-[100vh] w-full " id="home">
-      <div className="flex flex-wrap justify-center">DarkMode </div>
+      <div className="hidden">DarkMode </div>
 
       <div className="pt-[30vh] container ">
         <div className="flex flex-wrap justify-center ">

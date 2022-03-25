@@ -15,7 +15,7 @@ export default function About() {
               ></path>
             </svg>
             <div>
-              <span className="text-4xl font-bold  ml-4">./about/tech</span>
+              <span className="text-4xl font-bold ml-4">./about/tech</span>
             </div>
             <aside className="text-lg max-w-[82ch] p-5">
               I am a self-taught developer with a strong will to succeded in my
