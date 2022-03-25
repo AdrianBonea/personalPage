@@ -5,7 +5,7 @@ export default function Footer() {
 
   React.useEffect(() => {
     fetch(
-      "https:api.github.com/search/repositories?q=org:AdrianBonea&sort=updated&order=desc"
+      "https://api.github.com/search/repositories?q=org:AdrianBonea&sort=updated&order=desc"
     )
       .then((res) => res.json())
       .then((data) => setAllRepos(data.items))
