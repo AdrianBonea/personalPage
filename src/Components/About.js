@@ -1,14 +1,19 @@
-import { Tab } from "@headlessui/react";
-
 export default function About() {
   return (
     <section
-      className=" bg-[#373e98] h-auto w-full flex justify-center pb-10"
+      className=" bg-[#373e98] h-auto w-full flex justify-center pb-10 "
       id="about"
     >
       <div className="flex flex-col">
         <div className="flex w-auto bg-[#ceb92c]">
           <div className="text-[#373e98] font-bold">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path
+                fill="#373e98"
+                fillOpacity="1"
+                d="M0,96L1440,256L1440,0L0,0Z"
+              ></path>
+            </svg>
             <div>
               <span className="text-4xl font-bold  ml-4">./about/tech</span>
             </div>
@@ -37,7 +42,7 @@ export default function About() {
               </span>
             </div>
             <aside className="text-xl max-w-[70ch] pl-5 pt-1 pb-1 font-bold">
-              Frameworks & tools
+              Frameworks &amp; tools
             </aside>
             <div className="flex flex-row pl-5 ">
               <span className="mr-5 px-3 py-1 bg-[#373e98] text-[#ceb92c] rounded">
@@ -70,74 +75,94 @@ export default function About() {
                 Tabnine
               </span>
             </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path
+                fill="#f16775"
+                fillOpacity="1"
+                d="M0,96L1440,256L1440,320L0,320Z"
+              ></path>
+            </svg>
           </div>
         </div>
-        <div className="pt-10 bg-[#f16775] text-[#373e98] px-5">
-          <span className="text-4xl font-bold">./about/experience</span>
+        <div className="pt-10 bg-[#f16775] text-#373e98 px-5">
+          <span className="text-4xl font-bold text-[#2a2a2a]">
+            ./about/experience
+          </span>
           <div className="my-5 mx-5 ">
-            <ol class="relative border-l border-gray-200 dark:border-gray-700">
-              <li class="mb-10 ml-4">
-                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  February 2022
+            <ol className="relative border-l border-[#2a2a2a] ">
+              <li className="mb-10 ml-4">
+                <div className="absolute w-3 h-3 bg-[#2a2a2a] rounded-full mt-1.5 -left-1.5 border border-[#2a2a2a]"></div>
+                <time className="mb-1 text-sm font-normal leading-none text-[#2a2a2a]">
+                  June-September 2018
                 </time>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                  Application UI code in Tailwind CSS
+                <h3 className="text-lg font-bold text-[#2a2a2a] drop-shadow-sm">
+                  Junior accountant at Eurolines
                 </h3>
-                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                  Get access to over 20+ pages including a dashboard layout,
-                  charts, kanban board, calendar, and pre-order E-commerce &amp;
-                  Marketing pages.
+                <ul className="mb-4 ml-4 text-base font-normal text-[#2a2a2a]/70 max-w-[52ch] list-disc">
+                  <li>
+                    Help the team to transition from old methodsusing paper to
+                    digital.
+                  </li>
+                  <li>Record invoices in the system.</li>
+                </ul>
+              </li>
+              <li className="mb-10 ml-4">
+                <div className="absolute w-3 h-3 bg-[#2a2a2a] rounded-full mt-1.5 -left-1.5 border border-[#2a2a2a]"></div>
+                <time className="mb-1 text-sm font-normal leading-none text-[#2a2a2a] ">
+                  June 2019
+                </time>
+                <h3 className="text-lg font-bold text-[#2a2a2a] drop-shadow-sm">
+                  Graduate Bucharest University of Economic Studies
+                </h3>
+                <p className="mb-4 text-base font-normal text-[#2a2a2a]/70 max-w-[60ch]">
+                  BCs. in Accounting and Information Technology
                 </p>
-                <a
-                  href="#"
-                  class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                >
-                  Learn more{" "}
-                  <svg
-                    class="ml-2 w-3 h-3"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
+              </li>
+              <li className="ml-4">
+                <div className="absolute w-3 h-3 bg-[#2a2a2a] rounded-full mt-1.5 -left-1.5 border border-[#2a2a2a]"></div>
+                <time className="mb-1 text-sm font-normal leading-none text-[#2a2a2a] ">
+                  September 2019
+                </time>
+                <h3 className="text-lg font-bold text-[#2a2a2a] drop-shadow-sm">
+                  Audit Analyst at Deloitte
+                </h3>
+                <ul className="mb-4 ml-4 text-base font-normal text-[#2a2a2a]/70 max-w-[52ch] list-disc">
+                  <li>Provide our clients with the best auditprocedures.</li>
+                  <li>
+                    Help with creating and upgrading complex Excel templates.
+                  </li>
+                  <li>Helding training constantly for the newjoiners.</li>
+                </ul>
+              </li>
+              <li className="mb-10 ml-4">
+                <div className="absolute w-3 h-3 bg-[#2a2a2a] rounded-full mt-1.5 -left-1.5 border border-[#2a2a2a]"></div>
+                <time className="mb-1 text-sm font-normal leading-none text-[#2a2a2a] ">
+                  August 2021
+                </time>
+                <h3 className="text-lg font-bold text-[#2a2a2a] drop-shadow-sm">
+                  Begin my self learning path
+                </h3>
+                <p className="mb-4 text-base font-normal text-[#2a2a2a]/70 max-w-[60ch]">
+                  Started with with{" "}
+                  <a
+                    href="https://www.freecodecamp.org/learn/"
+                    className="underline"
                   >
-                    <path
-                      fill-rule="evenodd"
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </a>
-              </li>
-              <li class="mb-10 ml-4">
-                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  March 2022
-                </time>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                  Marketing UI design in Figma
-                </h3>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                  All of the pages and components are first designed in Figma
-                  and we keep a parity between the two versions even as we
-                  update the project.
-                </p>
-              </li>
-              <li class="ml-4">
-                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  April 2022
-                </time>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                  E-Commerce UI code in Tailwind CSS
-                </h3>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                  Get started with dozens of web components and interactive
-                  elements built on top of Tailwind CSS.
+                    freeCodeCamp{" "}
+                  </a>
+                  and evolving since then.
                 </p>
               </li>
             </ol>
           </div>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#f16775"
+            fillOpacity="1"
+            d="M0,96L1440,256L1440,0L0,0Z"
+          ></path>
+        </svg>
       </div>
     </section>
   );

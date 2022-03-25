@@ -1,6 +1,5 @@
 import React from "react";
-import { BsArrowReturnRight } from "react-icons/bs";
-import { SiGithub } from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
 
 export default function Footer() {
   const [allRepos, setAllRepos] = React.useState([]);
@@ -21,20 +20,17 @@ export default function Footer() {
   return (
     <footer className="inline-block">
       <footer
-        className=" w-full h-[320px] pb-[40px] 
+        className="w-full h-[320px] pb-[40px]  
                       bg-[#373e98] text-black flex justify-around font-Lato"
       >
-        <div className="absolute bottom-[320px] left-0 text-8xl text-bold text-white drop-shadow-lg">
-          Latest
-        </div>
         <div className="grid grid-cols-5 gap-y-10 gap-x-3 ">
-          <span className="row-span-2 text-8xl text-bold text-white drop-shadow-lg">
-            Updates
-            <div className="flex flex-row text-9xl">
-              <SiGithub />
-              <BsArrowReturnRight />
-            </div>
-          </span>
+          <div className="flex flex-col text-3xl font-bold pt-8 text-white drop-shadow-md">
+            <p>./github/updates</p>
+            <a href="https://github.com/AdrianBonea" className="text-6xl ml-5 ">
+              <AiFillGithub />
+            </a>
+          </div>
+
           {allRepos.slice(0, 3).map((repo) => (
             <a
               key={repo.id}
@@ -42,8 +38,8 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <ul className="backdrop-blur-xl bg-white/20 w-auto h-full my-3 mr-5 rounded-xl shadow-md ">
-                <li className="ml-5 pt-8 font-bold text-xl max-h-[260px] underline decoration-pink-500">
+              <ul className="backdrop-blur-xl bg-white/20 w-auto h-full my-3  shadow-md ">
+                <li className="ml-5 pt-8 font-bold text-xl max-h-[260px] underline decoration-[#f16775]">
                   {Capitalize(repo.name)}
                 </li>
                 <li className="ml-5 line-clamp-5 ">{repo.description}</li>

@@ -1,8 +1,8 @@
 export default function Navbar() {
   return (
     <header
-      className="flex h-screen
-                    w-[300px] bg-[#373e98] items-center font-Lato  text-[white] "
+      className="flex h-screen 
+                    w-[300px] bg-[#373e98] items-center font-Lato text-[white] "
     >
       <div className="flex flex-col mx-16 text-2xl">
         <a
